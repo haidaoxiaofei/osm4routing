@@ -13,8 +13,8 @@ setup(name='Osm4routing',
       author_email = 'tristramg@gmail.com',
       description = 'A simple tool to parse OpenStreetMap data to use them for routing',
       license = 'GPLv3',
-      url = 'http://github.com/Tristramg/osm4routing/',
-      install_requires = ['sqlalchemy <0.9', 'setuptools-git', 'geoalchemy'],
+      url = 'https://github.com/Tristramg/osm4routing/',
+      install_requires = [],
       py_modules = ['osm4routing', 'osm4routing_xml'],
 
       ext_modules = [
