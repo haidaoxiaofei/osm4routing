@@ -126,9 +126,9 @@ psql -d yourdatabase -f spatial_ref_sys.sql
 # Docker Images
 ```
 #start the container
-docker container run --rm -it -v $(pwd):/opt -w /opt  haidaoxiaofei/postgis4routing /bin/bash
+docker run --rm -it -d -v $(pwd):/opt -w /opt --name osm4routing haidaoxiaofei/postgis4routing
 #Attach into the container
-docker exec -i -t <container-id> /bin/bash
+docker exec -i -t osm4routing /bin/bash
 osm4routing your.osm.bz2 -n your_nodes.txt -e your_edges.txt
 ````
 
