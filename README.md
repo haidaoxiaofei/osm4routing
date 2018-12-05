@@ -121,3 +121,15 @@ createlang plpgsql yourdatabase
 psql -d yourdatabase -f lwpostgis.sql
 psql -d yourdatabase -f spatial_ref_sys.sql
 ```
+
+
+# Docker Images
+```
+#start the container
+docker container run --rm -it -v $(pwd):/opt -w /opt  haidaoxiaofei/postgis4routing /bin/bash
+#Attach into the container
+docker exec -i -t <container-id> /bin/bash
+osm4routing your.osm.bz2 -n your_nodes.txt -e your_edges.txt
+````
+
+
