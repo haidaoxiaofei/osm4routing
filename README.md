@@ -71,6 +71,10 @@ You need:
 ```
 # Just run the following command
 sudo python setup.py install
+sudo apt-get install python-pip
+sudo pip install flask_sqlalchemy
+sudo pip install geoalchemy2
+#change "geoalchemy" to "geoalchemy2" in /usr/local/lib/python2.7/dist-packages/Osm4routing-1.0.6-py2.7-linux-x86_64.egg/osm4routing.py
 # Run it
 osm4routing --help
 ```
